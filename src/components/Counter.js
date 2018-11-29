@@ -22,7 +22,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
   increment,
   decrement,
-  reset
+  reset,
 };
 
 export default connect(

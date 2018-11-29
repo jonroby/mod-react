@@ -12,5 +12,5 @@ export const decrement = payload => ({
 
 export const reset = payload => ({
   type: types.RESET,
-  payload
+  payload,
 });
