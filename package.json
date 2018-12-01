@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@mod-cli/mod-react-plugin": "^0.1.0",
+    "@mod-cli/mod-react-plugin": "^0.1.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
