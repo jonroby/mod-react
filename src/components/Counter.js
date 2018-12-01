@@ -15,12 +15,12 @@ class Counter extends Component {
 }
 
 const mapStateToProps = state => ({
-  count: state.counter.count
+  count: state.counter.count,
 });
 
 const mapDispatchToProps = {
   increment,
-  decrement
+  decrement,
 };
 
 export default connect(

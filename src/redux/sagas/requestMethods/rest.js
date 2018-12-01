@@ -3,9 +3,9 @@ const base = method => async (url, data) => {
   const response = await fetch(url, {
     method,
     headers: {
-      "Content-Type": "application/json; charset=utf-8"
+      "Content-Type": "application/json; charset=utf-8",
     },
-    ...body // Gets can't have a body at all
+    ...body, // Gets can't have a body at all
   });
   return response;
 };
