@@ -7,7 +7,7 @@ const base = method => async (url, data) => {
     },
     ...body // Gets can't have a body at all
   });
-  return response.json();
+  return response;
 };
 
 const get = base("GET");

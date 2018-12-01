@@ -5,7 +5,7 @@ const query = async (url, q) => {
     body: JSON.stringify({ query: q })
   });
 
-  return response.json();
+  return response;
 };
 
 const mutation = async (url, m) => {
@@ -15,7 +15,7 @@ const mutation = async (url, m) => {
     body: JSON.stringify({ query: m })
   });
 
-  return response.json();
+  return response;
 };
 
 export { query, mutation };
