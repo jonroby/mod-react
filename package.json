@@ -7,11 +7,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "eslint": "./node_modules/.bin/eslint \"./src/**/*.js\"",
+    "prettier": "prettier --write --trailing-comma es5 \"src/**/*.js\""
   },
   "license": "MIT",
   "dependencies": {
     "@mod-cli/mod-react-plugin": "^0.1.1",
+    "prettier": "^1.15.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
@@ -27,6 +30,10 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "camelcase": "^5.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-jest": "^22.1.0",
+    "eslint-plugin-react": "^7.11.1",
     "parcel-bundler": "^1.10.3",
     "redux-logger": "^3.0.6"
   }
