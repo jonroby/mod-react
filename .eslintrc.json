@@ -1,12 +1,25 @@
 {
   "env": {
-    "node": 1,
     "jest": true
   },
   "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 2018
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
-  "plugins": ["jest"]
+  "plugins": ["jest"],
+  "rules": {
+    "react/prop-types": 0
+  },
+  "settings": {
+    "react": {
+      "version": "16.6"
+    }
+  },
+  "globals": {
+    "fetch": true
+  }
 }
