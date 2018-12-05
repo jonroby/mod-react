@@ -1,20 +1,30 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Counter from "./Counter";
+import { connect } from "react-redux";
+import { increment, decrement } from "../redux/actions/creators";
 
-class App extends Component {
+class Counter extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          {/* <Navigation> */}
-          <Switch>
-            <Route path="/" component={Counter} exact />
-          </Switch>
-        </div>
-      </BrowserRouter>
+      <div>
+        <div>{this.props.count}</div>
+
+        <button onClick={this.props.increment}>+</button>
+        <button onClick={this.props.decrement}>-</button>
+      </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  count: state.counter.count,
+});
+
+const mapDispatchToProps = {
+  increment,
+  decrement,
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Counter);
