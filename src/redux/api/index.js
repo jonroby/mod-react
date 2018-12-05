@@ -1,4 +1,4 @@
-import { get, post, put, del } from "./rest";
-import { query, mutation } from "./graphql";
+// import { get, post, put, del } from "./rest";
+// import { query, mutation } from "./graphql";
 
-const API = {};
+// const API = {};
