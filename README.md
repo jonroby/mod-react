@@ -49,8 +49,7 @@ need to specify each (this was the command given in the preceding section):
 `$ mod <action> <Component|reducer>`
 
 One other feature is that the plugin won't write over previous actions, keys,
-case statements, etc. Nor does it duplicate them. However, it currently won't
-display this to you (coming soon).
+case statements, etc. Nor does it duplicate them.
 
 ### State
 
@@ -99,5 +98,4 @@ Currently not supported but coming soon:
 If they share the same name
 `$ mod -s myKey <Component|reducer>`
 
-Unlike actions, you can't ever omit `x` preceding a state key. And
-`$ -s stateKey` won't do anything.
+Unlike actions, you can't ever omit `x` preceding a state key.
